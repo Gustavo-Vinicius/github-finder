@@ -1,0 +1,17 @@
+.container {
+    background-color: #2b3566;
+    padding: 2rem;
+    border: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    border-radius: 10px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
