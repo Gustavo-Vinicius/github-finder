@@ -43,7 +43,7 @@ export const Repositories: React.FC<IRepositoriesProps> = ({}) => {
 
   return (
     <div>
-      <h3>Explore repositorios de : {username}</h3>
+      <h3 className={classes.titulo}>Explore repositorios de : {username}</h3>
       <div className={classes.container}>
       {repos && repos.length > 0 && repos?.map((repo) => <Repos {...repo} />)}
       </div>

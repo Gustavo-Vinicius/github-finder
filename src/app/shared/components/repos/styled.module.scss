@@ -1,13 +1,40 @@
 .container {
     background-color: #0e1129;
-    padding: 2rem;
-    border: 1rem;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.2rem;
-    border-radius: 10px;
+    gap: 1rem;
 }
 
+a {
+    text-align: center;
+    background-color: #212335;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 40%;
+    transition: all 0.2s;
 
+    &:hover {
+        background-color: lighten(#212335, 5);
+    }
+}
+
+.stats div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+
+.stats .number {
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    border: 2px solid #fff;
+}
+
+.linguagem {
+    display: flex;
+    justify-content: flex-start;
+}

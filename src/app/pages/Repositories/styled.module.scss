@@ -4,14 +4,12 @@
     border: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1.2rem;
     border-radius: 10px;
 }
 
-h3 {
+.titulo {
     display: flex;
+    padding: 20px;
     justify-content: center;
-    padding: 10px;
 }

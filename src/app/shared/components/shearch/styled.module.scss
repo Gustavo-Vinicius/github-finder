@@ -1,5 +1,5 @@
 $background-color-search: #2b3566;
-$color-p-search: #FFF;
+$color-p-search: #fff;
 $color-search-container-button: #2b3566;
 
 .search {
@@ -20,12 +20,12 @@ $color-search-container-button: #2b3566;
 
 .search_container {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .search_container input,
-.search_container button{
-    padding: .6rem;
+.search_container button {
+    padding: 0.6rem;
     border-radius: 3px;
     border: none;
     color: $color-search-container-button;

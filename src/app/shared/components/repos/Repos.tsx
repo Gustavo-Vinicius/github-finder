@@ -20,15 +20,18 @@ export const Repos: React.FC<ReposProps> = ({
 
   return (
     <div className={classes.container}>
-      <h3>{name}</h3>
-      <p>{language}</p>
-      <div className="">
-        <p>{stargazers_count}</p>
+      <h3 className={classes.name}>{name}</h3>
+      <p className={classes.linguagem}>{language}</p>
+      <div className={classes.stats}>
+        <div>
+          <p className={classes.number}>{stargazers_count}</p>
+          <p className={classes.number}>{watchers_count}</p>
+        </div>
       </div>
-      <div className="">
-        <p>{watchers_count}</p>
-      </div>
-      <button onClick={handleOpenCode}>Abrir codigo</button>
+
+      <Link to="" onClick={handleOpenCode}>
+        Abrir codigo
+      </Link>
     </div>
   );
 };
