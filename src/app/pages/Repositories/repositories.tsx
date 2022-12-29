@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Repos } from "../../shared/components/repos/Repos";
 import { ReposProps } from "../../shared/types/repos";
-import classes from "./styled.module.scss"
+import classes from "./styled.module.scss";
 
 interface IRepositoriesProps {}
 
@@ -28,6 +28,7 @@ export const Repositories: React.FC<IRepositoriesProps> = ({}) => {
           watchers_count,
         };
 
+        console.log({});
         return repoData;
       }
     );
@@ -41,11 +42,22 @@ export const Repositories: React.FC<IRepositoriesProps> = ({}) => {
     })();
   }, []);
 
+  const handleVoltarParaBuscarUsuario = () => {
+    history.go(-1);
+  };
+
   return (
     <div>
+      <button
+        className={classes.button}
+        onClick={handleVoltarParaBuscarUsuario}
+      >
+        Voltar
+      </button>
       <h3 className={classes.titulo}>Explore repositorios de : {username}</h3>
+
       <div className={classes.container}>
-      {repos && repos.length > 0 && repos?.map((repo) => <Repos {...repo} />)}
+        {repos && repos.length > 0 && repos?.map((repo) => <Repos {...repo} />)}
       </div>
     </div>
   );

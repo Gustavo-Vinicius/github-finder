@@ -13,3 +13,17 @@
     padding: 20px;
     justify-content: center;
 }
+
+.button {
+    text-align: center;
+    background-color: #2b3566;
+    border-color: #2b3566;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 40%;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: lighten(#2b3566, 5);
+    }
+}
